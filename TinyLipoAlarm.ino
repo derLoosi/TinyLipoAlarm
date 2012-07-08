@@ -32,29 +32,41 @@ void loop() // run over and over
       vbatalarm=3;
     }
     
-    if(vbatalarm=0){
-      delay(1000);
-      mySerial.print("schleife vbatalarm0 val:);
-      mySerial.println(vbatalarm);
+    if(vbatalarm==0){
+      delay(500);
     }
     
-    if(vbatalarm=1){
+    if(vbatalarm==1){
     digitalWrite(buzzer, HIGH);
     delay(200);
     digitalWrite(buzzer, LOW);
     delay(800);
-      mySerial.print("schleife vbatalarm0 val:);
-      mySerial.println(vbatalarm);
     }
     
-    if(vbatalarm=2){
-            mySerial.print("schleife vbatalarm0 val:);
-      mySerial.println(vbatalarm);
+    if(vbatalarm==2){
+    digitalWrite(buzzer, HIGH);
+    delay(200);
+    digitalWrite(buzzer, LOW);
+    delay(200);
+    digitalWrite(buzzer, HIGH);
+    delay(200);
+    digitalWrite(buzzer, LOW);
+    delay(400);
     }
     
     
-    if(vbatalarm=3){
-            mySerial.print("schleife vbatalarm0 val:);
-      mySerial.println(vbatalarm);
+    if(vbatalarm==3){
+    digitalWrite(buzzer, HIGH);
+    delay(100);
+    digitalWrite(buzzer, LOW);
+    delay(100);
+    digitalWrite(buzzer, HIGH);
+    delay(100);
+    digitalWrite(buzzer, LOW);
+    delay(100);
+    digitalWrite(buzzer, HIGH);
+    delay(400);
+    digitalWrite(buzzer, LOW);
+    delay(100);
     }
 }
